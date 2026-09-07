@@ -29,10 +29,11 @@ window.onload = () => {
 function iniciar() {
     if (intervalo) return;
     salvarConfig();
-    
-    tempo = parseInt(document.getElementById("execucao").value);
+
+    tempo = parseInt(document.getElementById("execucao").value) || 0;
     fase = "Execução";
     cicloAtual = 1;
+    pausado = false;
     
     atualizarTela();
     tocarAviso();
@@ -43,14 +44,14 @@ function iniciar() {
             if (tempo < 0) {
                 if (fase === "Execução") {
                     fase = "Descanso";
-                    tempo = parseInt(document.getElementById("descanso").value);
+                    tempo = parseInt(document.getElementById("descanso").value) || 0;
                 } else {
                     cicloAtual++;
-                    if (cicloAtual > parseInt(document.getElementById("ciclos").value)) {
+                    if (cicloAtual > (parseInt(document.getElementById("ciclos").value) || 1)) {
                         return finalizar();
                     }
                     fase = "Execução";
-                    tempo = parseInt(document.getElementById("execucao").value);
+                    tempo = parseInt(document.getElementById("execucao").value) || 0;
                 }
                 tocarAviso();
             }

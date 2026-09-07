@@ -1,0 +1,23 @@
+{
+  "name": "joelho-timer",
+  "version": "1.0.0",
+  "description": "Timer de execução/descanso para reabilitação de joelho",
+  "scripts": {
+    "sync": "npx cap sync",
+    "android": "npx cap open android",
+    "ios": "npx cap open ios"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@capacitor/android": "^8.5.1",
+    "@capacitor/cli": "^8.5.1",
+    "@capacitor/core": "^8.5.1",
+    "@capacitor/ios": "^8.5.1"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5"
+  },
+  "allowScripts": {
+    "sharp@0.32.6": true
+  }
+}

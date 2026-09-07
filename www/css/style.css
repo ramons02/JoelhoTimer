@@ -122,13 +122,13 @@ button {
 button i { font-size: 16px; }
 
 /* Verde Esmeralda */
-.btn-success { background: #101492; }
+.btn-success { background: #10b981; }
 
-/* Azul Oceano */
-.btn-warning { background: #101492 }
+/* Âmbar */
+.btn-warning { background: #f59e0b; }
 
 /* Vermelho Coral */
-.btn-danger { background:  #101492; }
+.btn-danger { background: #ef4444; }
 
 /* Efeito ao tocar */
 button:active {
